@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Background Search - Discover Hidden Benefits</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    html, body {
+      height: 100%;
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 420px;
+      padding: 30px 25px;
+      border-radius: 15px;
+      border: 3px solid #00ff90;
+      box-shadow: 0 10px 30px rgba(0,255,144,0.5);
+      position: relative;
+      overflow: hidden;
+    }
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url(images/pexels-sharefaith-491036-1202723.jpg) center center/cover no-repeat;
+      filter: blur(8px) brightness(0.5);
+      z-index: 0;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+    ul {
+      list-style: none;
+      margin-bottom: 40px;
+      text-align: left;
+      padding-left: 22px;
+    }
+    ul li {
+      margin-bottom: 14px;
+      font-size: 1.1rem;
+      position: relative;
+      padding-left: 32px;
+      font-weight: 600;
+    }
+    ul li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #00ff90;
+      font-weight: 900;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+    .cta-btn {
+      display: inline-block;
+      background-color: #00ff90;
+      color: #004d40;
+      font-weight: 700;
+      font-size: 1.4rem;
+      padding: 16px 45px;
+      border-radius: 35px;
+      text-decoration: none;
+      box-shadow: 0 7px 20px rgba(0,255,144,0.5);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+    }
+    .cta-btn:hover,
+    .cta-btn:focus {
+      background-color: #00cc73;
+      color: #003322;
+      outline: none;
+    }
+    @media (max-width: 600px) {
+      .container {
+        max-width: 90vw;
+        padding: 25px 20px;
+        border-width: 2px;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.05rem;
+      }
+      ul li {
+        font-size: 1rem;
+        padding-left: 26px;
+      }
+      ul li::before {
+        font-size: 1.1rem;
+      }
+      .cta-btn {
+        font-size: 1.2rem;
+        padding: 14px 38px;
+        border-radius: 30px;
+      }
+    }
+  </style>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // Replace with your GA4 ID
+  </script>
+</head>
+<body>
+  <main class="container" role="main" aria-label="Landing page">
+    <div class="content">
+      <h1>Do You Know What’s in Your Public Record?</h1>
+      <p>Find out in seconds — and uncover financial benefits you may be missing.</p>
+      <ul>
+        <li>Check for unclaimed refunds</li>
+        <li>Discover hidden tax credits</li>
+        <li>Search your public records fast</li>
+      </ul>
+      <a
+        class="cta-btn"
+        href="https://www.wkp20trk.com/8WT9M8N/FNXMC2G/"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="cta-button"
+      >Start My Free Search</a>
+    </div>
+  </main>
+
+  <script>
+    // Track CTA click in GA4
+    const ctaBtn = document.getElementById("cta-button");
+    ctaBtn.addEventListener("click", () => {
+      if (typeof gtag === "function") {
+        gtag("event", "cta_click", {
+          event_category: "engagement",
+          event_label: "CTA Button Click",
+        });
+      }
+    });
+  </script>
+</body>
+</html>
